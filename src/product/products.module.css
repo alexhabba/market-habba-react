@@ -1,0 +1,22 @@
+.products {
+    /*border: 2px solid green;*/
+    /*height: 100px;*/
+}
+
+.listProduct {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    list-style-type: none;
+    /*padding-top: 25px;*/
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+    /*padding-bottom: 40px;*/
+}
+
+li {
+    /*border: 2px solid green;*/
+    /*background-color: yellow;*/
+}

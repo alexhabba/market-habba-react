@@ -1,0 +1,34 @@
+.card img {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    display: block;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+.card_name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 21px;
+    text-align: center;
+}
+
+.card_img {
+    align-items: center;
+    /*border: 1px solid red;*/
+}
+
+.card_description {
+    text-align: center;
+}
+
+.card_price {
+    display: flex;
+    justify-content: space-around;
+}
