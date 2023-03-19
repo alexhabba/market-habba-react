@@ -9,10 +9,8 @@ function Header() {
     const isManager = useSelector(state => state.root.isManager)
     const isShowManagerPanel = useSelector(state => state.root.isShowManagerPanel)
     const [modalActive, setModalActive] = useState(true)
-    console.log(isManager)
 
     function showPageAdmin() {
-        console.log("я нажал на кнопку")
         dispatch({type: "SHOW_ADMIN_PANEL"})
     }
 
@@ -40,7 +38,7 @@ function Header() {
             </div>
 
             <Modal active={modalActive} setActive={setModalActive}>
-                <Form title="Регистрация"/>
+                <Form/>
             </Modal>
         </div>
     )
