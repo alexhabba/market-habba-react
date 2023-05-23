@@ -1,7 +1,9 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {useSelector} from "react-redux";
 
 function Form(props) {
+    const user = useSelector(state => state.user.user)
     const [emailValue, setEmailValue] = useState("");
     const [emailDirty, setEmailDirty] = useState(false);
     const [emailError, setEmailError] = useState("E-mail не может быть пустым");
@@ -64,6 +66,7 @@ function Form(props) {
     }
     const sendFormLoginOrRegistration = () => {
         //todo реализовать проверку совпадения пароля и подтверждения его
+        console.log(user)
         const data = {"email": emailValue, "password": passwordValue}
         const url = isAuthentication ? "http://localhost:8888/user/login" : "http://localhost:8888/user/registration"
         let promise = axios
@@ -74,7 +77,6 @@ function Form(props) {
                         'Content-Type': 'application/json'
                     }
                 });
-
         promise
             .then(res => {
                 let r = res.data.roles[0]
