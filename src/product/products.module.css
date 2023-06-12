@@ -10,13 +10,23 @@
     row-gap: 20px;
     column-gap: 20px;
     list-style-type: none;
-    /*padding-top: 25px;*/
-    /*padding-left: 20px;*/
-    /*padding-right: 20px;*/
-    /*padding-bottom: 40px;*/
+
+    @media (max-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (max-width: 1060px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 730px) {
+        grid-template-columns: 1fr;
+    }
 }
 
-li {
-    /*border: 2px solid green;*/
-    /*background-color: yellow;*/
-}
+    /*@media (max-width: 1024px) {*/
+    /*    grid-template-columns: 1fr 1fr;*/
+    /*}*/
+
+    li {
+        /*border: 2px solid green;*/
+        /*background-color: yellow;*/
+    }

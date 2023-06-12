@@ -117,7 +117,6 @@ const Products = (props) => {
                     <Card src="https://proprikol.ru/wp-content/uploads/2021/11/fordy-krasivye-kartinki-45.jpg" cardName="Антибиотик"/>
                 </li>
             </ul>
-
         </div>
     )
 }

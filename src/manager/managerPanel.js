@@ -48,7 +48,8 @@ const ManagerPanel = (props) => {
             <div>
                 <button onClick={sendProduct}>Отправить</button>
             </div>
-            {newImageProductList.map(f => <img style={{border: '2px solid green', height: 200, width: 200}} src={URL.createObjectURL(f)} alt=""/>)}
+            {newImageProductList.map(f => <img style={{border: '2px solid green', height: 200, width: 200}}
+                                               src={URL.createObjectURL(f)} alt=""/>)}
 
         </div>
     )
